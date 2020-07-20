@@ -212,7 +212,7 @@ for (i in 1:length(all_subpages)){
   df$url <- list_href
   # register with Google maps API key 
   # https://console.developers.google.com/apis/credentials?folder=&organizationId=&project=geo-location-1579987100565
-  register_google(key='AIzaSyCuox4qT7oyJBLlpdunF5IZ8qAonM2euAM')
+  # register_google(key='')
   geo_location <- geocode(df$geo_address)
   df <- cbind(df, as.data.frame(geo_location))
   all_data[[i]] <- df
